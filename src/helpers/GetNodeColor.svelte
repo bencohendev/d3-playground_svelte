@@ -4,7 +4,7 @@
             if (neighbors.indexOf(node.id) > 0) {
                 return node.level === 1 ? "blue" : "green";
             }
-            return node.level === 1 ? "red" : "gray";
         }
+        return node.level === 1 ? "red" : "gray";
     }
 </script>
