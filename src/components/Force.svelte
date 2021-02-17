@@ -70,9 +70,11 @@
 
         const dragDrop = d3
             .drag()
+
             .on("start", (e, node) => {
                 node.fx = node.x;
                 node.fy = node.y;
+                selectNode(e, node);
             })
             .on("drag", (e, node) => {
                 simulation.alphaTarget(1.7).restart();
@@ -96,7 +98,7 @@
                 getLinkColor(selectedNode, link)
             );
         }
-        nodeElements.on("click", selectNode);
+        // nodeElements.on("click", selectNode);
     }
 </script>
 
