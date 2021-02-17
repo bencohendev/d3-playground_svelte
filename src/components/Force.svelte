@@ -6,7 +6,6 @@
     import { getNeighbors } from "../helpers/GetNeighbors.svelte";
     import { getNodeColor } from "../helpers/GetNodeColor.svelte";
     import { getTextColor } from "../helpers/GetTextColor.svelte";
-    import { isNeighborLink } from "../helpers/IsNeighborLink.svelte";
 
     var width = 1000,
         height = 1000;
