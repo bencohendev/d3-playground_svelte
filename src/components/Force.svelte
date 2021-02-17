@@ -77,7 +77,7 @@
                 selectNode(e, node);
             })
             .on("drag", (e, node) => {
-                simulation.alphaTarget(1.7).restart();
+                simulation.alphaTarget(0.7).restart();
                 node.fx = e.x;
                 node.fy = e.y;
             })

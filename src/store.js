@@ -31,12 +31,9 @@ export let forceData = writable(
                 { target: "insect", source: "bee", strength: 0.7 },
                 { target: "fish", source: "carp", strength: 0.7 },
                 { target: "fish", source: "pike", strength: 0.7 },
-                { target: "cat", source: "elk", strength: 0.1 },
-                { target: "carp", source: "ant", strength: 0.1 },
-                { target: "elk", source: "bee", strength: 0.1 },
-                { target: "dog", source: "cat", strength: 0.1 },
-                { target: "fox", source: "ant", strength: 0.1 },
-                { target: "pike", source: "dog", strength: 0.1 }
+                { target: "mammal", source: "insect", strength: 0.1 },
+                { target: "insect", source: "fish", strength: 0.1 },
+                { target: "fish", source: "mammal", strength: 0.1 },
             ]
     }
 
