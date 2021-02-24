@@ -13,8 +13,8 @@
     onMount(network);
 
     function network() {
-        let links = $forceData.links;
-        let nodes = $forceData.nodes;
+        let links = $forceData.baseLinks;
+        let nodes = $forceData.baseNodes;
 
         let svg = d3.select("svg").attr("width", width).attr("height", height);
         let simulation = d3
@@ -70,7 +70,6 @@
 
         const dragDrop = d3
             .drag()
-
             .on("start", (e, node) => {
                 node.fx = node.x;
                 node.fy = node.y;
@@ -98,7 +97,6 @@
                 getLinkColor(selectedNode, link)
             );
         }
-        // nodeElements.on("click", selectNode);
     }
 </script>
 

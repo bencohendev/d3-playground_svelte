@@ -7,7 +7,7 @@ export let barData = writable([1, 2, 3, 4, 5])
 export let forceData = writable(
 
     {
-        nodes:
+        baseNodes:
             [
                 { id: "mammal", group: 0, label: "Mammals", level: 1 },
                 { id: "dog", group: 0, label: "Dogs", level: 2 },
@@ -21,7 +21,7 @@ export let forceData = writable(
                 { id: "carp", group: 2, label: "Carp", level: 2 },
                 { id: "pike", group: 2, label: "Pikes", level: 2 }
             ],
-        links:
+        baseLinks:
             [
                 { target: "mammal", source: "dog", strength: 0.7 },
                 { target: "mammal", source: "cat", strength: 0.7 },
